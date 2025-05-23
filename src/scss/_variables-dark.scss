@@ -1,0 +1,94 @@
+$primary-dark:       desaturate($primary, 10%) !default;
+$success-dark:       desaturate($success, 10%) !default;
+$info-dark:          desaturate($info, 10%) !default;
+$warning-dark:       desaturate($warning, 10%) !default;
+$danger-dark:        desaturate($danger, 10%) !default;
+$valid-dark:         rgba(46, 184, 92, 1);
+$invalid-dark:       rgba(228, 83, 83, 1);
+
+$primary-text-emphasis-dark:    shade-color($primary-dark, 60%) !default;
+$success-text-emphasis-dark:    shade-color($success-dark, 60%) !default;
+$info-text-emphasis-dark:       shade-color($info-dark, 60%) !default;
+$warning-text-emphasis-dark:    shade-color($warning-dark, 60%) !default;
+$danger-text-emphasis-dark:     shade-color($danger-dark, 60%) !default;
+
+$primary-bg-subtle-dark:        tint-color($primary-dark, 80%) !default;
+$success-bg-subtle-dark:        tint-color($success-dark, 80%) !default;
+$info-bg-subtle-dark:           tint-color($info-dark, 80%) !default;
+$warning-bg-subtle-dark:        tint-color($warning-dark, 80%) !default;
+$danger-bg-subtle-dark:         tint-color($danger-dark, 80%) !default;
+
+$primary-border-subtle-dark:    tint-color($primary-dark, 60%) !default;
+$success-border-subtle-dark:    tint-color($success-dark, 60%) !default;
+$info-border-subtle-dark:       tint-color($info-dark, 60%) !default;
+$warning-border-subtle-dark:    tint-color($warning-dark, 60%) !default;
+$danger-border-subtle-dark:     tint-color($danger-dark, 60%) !default;
+
+
+$primary-gradient-dark: (
+  "start":  tint-color($primary-dark, 10%),
+  "stop":   shade-color($primary-dark, 10%)
+) !default;
+
+$danger-gradient-dark: (
+  "start":  tint-color($danger-dark, 10%),
+  "stop":   shade-color($danger-dark, 10%)
+) !default;
+
+$warning-gradient-dark: (
+  "start":  tint-color($warning-dark, 10%),
+  "stop":   shade-color($warning-dark, 10%)
+) !default;
+
+$success-gradient-dark: (
+  "start":  tint-color($success-dark, 10%),
+  "stop":   shade-color($success-dark, 10%)
+) !default;
+
+$info-gradient-dark: (
+  "start":  tint-color($info-dark, 10%),
+  "stop":   shade-color($info-dark, 10%)
+) !default;
+
+$theme-gradients-dark: (
+  "primary":    $primary-gradient-dark,
+  "success":    $success-gradient-dark,
+  "info":       $info-gradient-dark,
+  "warning":    $warning-gradient-dark,
+  "danger":     $danger-gradient-dark
+) !default;
+
+// scss-docs-start form-switch-variables
+$form-switch-bg-image-dark:            url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><defs><linearGradient id='grad' gradientTransform='rotate(45)'><stop offset='0.12%' stop-color='#{$form-switch-gradient-start}'/><stop offset='99.8%' stop-color='#{$form-switch-gradient-stop}'/></linearGradient></defs><circle r='3' fill='url(#grad)'/></svg>") !default;
+// scss-docs-end form-switch-variables
+
+$body-color-dark: rgba(255, 255, 255, 1);
+
+$input-bg-dark:                          rgba(255, 255, 255, 1) !default;
+$input-color-dark:                       rgba(157, 165, 177, 1) !default;
+$input-placeholder-color-dark:           $input-color-dark !default;
+$input-border-radius-dark:               0.375rem !default;
+$input-border-color-dark:                $input-color-dark !default;
+
+$input-focus-color-dark:                 rgba(33, 33, 33, 1) !default;
+$input-focus-box-shadow-dark:            none !default;
+$input-focus-border-color-dark:          rgba(0, 149, 255, 1) !default;
+
+$input-disabled-bg-dark:                 rgba(33, 47, 56, 1) !default;
+$input-disabled-border-color-dark:       rgba(48, 61, 82, 1) !default;
+
+$form-valid-border-color-dark:           $valid-dark !default;
+$form-feedback-icon-valid-color-dark:    $valid-dark !default;
+
+$form-invalid-color-dark:                $invalid-dark !default;
+$form-invalid-border-color-dark:         $invalid-dark !default;
+$form-feedback-invalid-color-dark:       $invalid-dark !default;
+$form-feedback-icon-invalid-color-dark:  $invalid-dark !default;
+
+$form-multi-select-bg-dark:             rgba(47, 62, 72, 1) !default;
+$form-multi-select-color-dark:          rgba(47, 62, 72, 1) !default;
+
+$form-select-indicator-dark:            url("data:image/svg+xml,<svg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M8.58581 0H1.41424C0.523331 0 0.0771648 1.07714 0.70713 1.70711L4.29292 5.29289C4.68344 5.68342 5.3166 5.68342 5.70713 5.29289L9.29292 1.70711C9.92288 1.07714 9.47671 0 8.58581 0Z' fill='#{$input-bg-dark}'/></svg>") !default;
+
+
+$table-bg-dark: rgba(47, 62, 72, 1) !default;

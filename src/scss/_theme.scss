@@ -1,0 +1,207 @@
+body {
+  background-color: var(--cui-tertiary-bg);
+}
+
+.wrapper {
+  width: 100%;
+  @include ltr-rtl("padding-left", var(--cui-sidebar-occupy-start, 0));
+  @include ltr-rtl("padding-right", var(--cui-sidebar-occupy-end, 0));
+  will-change: auto;
+  @include transition(padding .15s);
+}
+
+.header {
+  min-height: calc(4rem + 1px); // stylelint-disable-line function-disallowed-list
+  --cui-header-color: rgb(33, 33, 33);
+}
+
+.sidebar-brand-full {
+  margin-left: 3px;
+}
+
+.sidebar-header {
+  .nav-underline-border {
+    --cui-nav-underline-border-link-padding-x: 1rem;
+    --cui-nav-underline-border-gap: 0;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    min-height: calc(4rem + 1px); // stylelint-disable-line function-disallowed-list
+  }
+}
+
+.sidebar-toggler {
+  @include ltr-rtl("margin-left", auto);
+}
+
+.sidebar-narrow,
+.sidebar-narrow-unfoldable:not(:hover) {
+  .sidebar-toggler {
+    display: none;
+  }
+}
+
+.card,
+.dropdown-menu,
+.footer,
+.sidebar {
+  box-shadow: rgb(50 50 93 / 2%) 0 2px 5px -1px, rgb(0 0 0 / 5%) 0 1px 3px -1px;
+}
+
+.sidebar-nav .nav-link:hover {
+  --cui-sidebar-nav-link-hover-bg: rgba(255, 255, 255, .0375);
+}
+
+.sidebar-nav .nav-link.active {
+  --cui-sidebar-nav-link-active-bg: rgba(255, 255, 255, .0375);
+}
+
+.btn:hover {
+  color: var(--cui-white)
+}
+
+.form-multi-select-option.form-multi-selected {
+  color: rgba(110, 117, 128, 1);
+}
+
+@if $enable-dark-mode {
+  @include color-mode(dark) {
+    body {
+      background-color: var(--cui-dark-bg-subtle);
+    }
+
+    .header {
+      --cui-header-color: var(--cui-white);
+    }
+
+    .sidebar {
+      background-color: var(--cui-body-bg) !important; // stylelint-disable-line
+      background-image: none !important; // stylelint-disable-line
+
+      .sidebar-brand {
+        --cui-sidebar-brand-color: rgb(255, 255, 255);
+      }
+    }
+
+    .footer {
+      --cui-footer-bg: var(--cui-body-bg);
+    }
+
+    .form-check-input {
+      --cui-form-check-bg: rgba(65, 84, 115, 1);
+    }
+
+    .form-control {
+      background-color: rgba(47, 62, 72, 1);
+      border-color: rgba(157, 165, 177, 1);
+      color: $input-color-dark;
+
+      &:focus {
+        color: $white;
+        border-color: $input-focus-border-color-dark;
+      }
+
+      &:disabled {
+        background: $input-disabled-bg-dark;
+        border-color: $input-disabled-border-color-dark;
+        color: $input-disabled-color;
+      }
+
+      &[readonly] {
+        background: $input-disabled-bg-dark;
+        color: $white;
+        border-color: $input-disabled-border-color-dark;
+        &:focus {
+          border-color: $input-disabled-border-color-dark;
+        }
+      }
+
+      &.is-valid:focus, &.is-invalid:focus{
+        box-shadow: none;
+      }
+      &.is-valid {
+        color: $white;
+        border-color: $valid-dark;
+      }
+      &.is-invalid {
+        color: $invalid-dark;
+        border-color: $invalid-dark;
+      }
+    }
+    .invalid-feedback {
+      color: $invalid-dark;
+    }
+
+    .form-multi-select {
+      --cui-form-multi-select-focus-bg: $form-multi-select-bg-dark;
+      --cui-form-multi-select-bg: $form-multi-select-bg-dark;
+      background-color: $form-multi-select-bg-dark;
+      --cui-form-multi-select-placeholder-color: $white;
+      --cui-form-multi-select-color: rgba(130, 137, 148, 1);
+      --cui-form-multi-select-focus-color: rgba(130, 137, 148, 1);
+
+      --cui-form-multi-select-cleaner-icon-color: #fff;
+      --cui-form-multi-select-indicator-icon-color: #fff;
+      --cui-form-multi-select-indicator-icon-hover-color: #fff;
+
+      --cui-form-multi-select-option-indicator-bg: rgba(62, 78, 89, 1);
+      --cui-form-multi-select-option-indicator-border: 1px solid rgba(130, 137, 148, 1);
+    }
+
+    .form-multi-select-option.form-multi-selected {
+      color: $white;
+    }
+
+    .form-select {
+      color: var(--cui-white);
+      background-color: $form-multi-select-bg-dark;
+    }
+
+    .table {
+      --cui-table-color: $white;
+      --cui-table-hover-color: $white;
+      --cui-table-bg: $table-bg-dark;
+    }
+
+    .nav-link {
+      color: var(--cui-white);
+    }
+
+    .filter-toggle {
+      button {
+        background-color: rgba(47, 62, 72);
+        color: rgb(157, 165, 177);
+
+        &.close {
+          background-color: rgb(41, 59, 69);
+          &:hover {
+            background-color: var(--cui-btn-hover-bg);
+          }
+        }
+      }
+    }
+
+    .btn-nav-link-pwa {
+      --cui-btn-color: rgb(255, 255, 255) !important;
+    }
+
+    button.tgme_widget_login_button {
+      color: #ffffff;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+
+    .auth-layout__right {
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 75%),
+        url("src/assets/images/right-layout.png"),
+        radial-gradient(circle, rgba(0, 149, 255, 0.9) 10%, rgba(255, 255, 255, 0) 50%);
+      background-size:  100% 100%, auto, 150% 150%; /* Sizes for each gradient */
+      background-position: 0 0, 0 0, 75% 150%;
+    }
+  }
+}

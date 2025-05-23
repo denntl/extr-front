@@ -1,0 +1,56 @@
+.images-preview-item {
+  display: flex;
+  overflow-x: auto;
+
+  .image-container {
+    height: 140px;
+    width: auto;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 3px;
+    border-style: solid;
+    border-color: transparent;
+  }
+
+  .image-container:hover {
+    background-color: rgba(61, 153, 245, 0.5);
+    border-color: #0095FF;
+
+    img {
+      max-height: 112px;
+    }
+  }
+
+  .image-box {
+    position: relative;
+  }
+
+  img {
+    max-height: 112px;
+    //max-height: 120px;
+    width: auto;
+    height: 100%;
+  }
+
+  .remove-image-btn {
+    padding: 2px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    border-radius: 90px;
+    border-width: 0;
+    background-color: red;
+    color: white;
+    svg {
+      vertical-align: top;
+      line {
+        stroke: white;
+      }
+    }
+  }
+}

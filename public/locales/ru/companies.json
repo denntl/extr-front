@@ -1,0 +1,13 @@
+{
+  "deposit_error": "Ошибка пополнения баланса",
+  "deposit_success": "Баланс компании успешно пополнен",
+  "balance_bonus": "Бонусный",
+  "balance_main": "Основной",
+  "amount": "Сумма к пополнению",
+  "balance_type": "Тип баланса",
+  "deposit_button": "Пополнить",
+  "deposit_comment": "Причина пополнения",
+  "label_transactions": "Транзакции",
+  "label_company_edit": "Редактирование компании",
+  "label_manual_balance_deposit": "Ручное пополнение баланса"
+}

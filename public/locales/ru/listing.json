@@ -1,0 +1,19 @@
+{
+  "create_button": "Добавить",
+  "search_placeholder": "Поиск",
+  "search_button": "Поиск",
+  "there_is_no_data": "Нет данных",
+  "eq": "Равно",
+  "neq": "Не равно",
+  "gte": "Больше",
+  "lte": "Меньше",
+  "between": "Между",
+  "contains": "Содержит",
+  "not_contains": "Не содержит",
+  "in": "Включает",
+  "not_in": "Не включает",
+  "create_first_pwa": "Создайте свое первое PWA",
+  "apps": "Приложения",
+  "empty": "Пусто",
+  "not_empty": "Не пусто"
+}

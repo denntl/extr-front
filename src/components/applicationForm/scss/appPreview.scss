@@ -1,0 +1,23 @@
+@media screen and (max-device-width: 620px) {
+  .pwa_preview {
+    display: none;
+  }
+}
+
+.pwa_preview {
+  background: url(/src/assets/images/bg_mockup_phone.svg) no-repeat center center;
+  width: 412px;
+  height: 816px;
+  padding: 62px 27px 25px;
+  filter: drop-shadow(0px 35px 46px rgba(33, 191, 115, 0.15));
+  background-size: 100%;
+  margin: auto;
+}
+
+.pwa_preview_iframe {
+  background: #fff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+  height: 100%;
+}

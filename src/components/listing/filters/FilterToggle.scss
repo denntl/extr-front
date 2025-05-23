@@ -1,0 +1,18 @@
+.filter-toggle {
+  button {
+    color: rgba(110, 117, 128, 1);
+    background-color: rgba(235, 237, 239, 1);
+    border: none;
+
+    &.text-truncate {
+      max-width: 200px;
+    }
+
+    &.close {
+      background-color: rgba(215, 220, 224, 1);
+      &:hover {
+        background-color: var(--cui-btn-hover-bg);;
+      }
+    }
+  }
+}

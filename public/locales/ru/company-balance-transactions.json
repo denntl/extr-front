@@ -1,0 +1,19 @@
+{
+  "manual_deposit": "Ручное пополнение",
+  "deposit": "Пополнение",
+  "balance_deposit": "Пополнение баланса",
+  "tariff_install": "Снятие за инсталл",
+  "install_payment": "Оплата за инсталл",
+  "header_label": "Транзакция",
+  "name": "Название",
+  "date": "Дата",
+  "operation_type": "Тип операции",
+  "provider": "Провайдер",
+  "application": "Приложение",
+  "status": "Статус",
+  "amount": "Сумма",
+  "balance": "Баланс",
+  "balance_type": "Тип баланса",
+  "operator": "Оператор",
+  "comment": "Причина пополнения"
+}

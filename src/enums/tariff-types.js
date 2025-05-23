@@ -1,0 +1,2 @@
+export const TARIFF_TYPE_INSTALL = 1
+export const TARIFF_TYPE_SUBSCRIPTION_TIERS = 2

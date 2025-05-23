@@ -1,0 +1,23 @@
+{
+  "label_tariff": "Тариф",
+  "label_type": "Тип тарифа",
+  "label_amount": "Цена",
+  "label_name": "Название",
+  "label_companies": "Компании",
+  "current_tariff": "Актуальный тариф",
+  "tariffs_install_tabName": "Исталлы",
+  "tariffs_subscription_tiers_tabName": "Подписки",
+  "tariffs_install_titleName": "Тариф \"За инсталл\"",
+  "tariffs_install_headerName": "Инсталлы",
+  "tariffs_click_tabName": "За клик",
+  "tariffs_click_headerName": "Клики",
+  "placeholder_tier_name": "Стоимость для",
+  "validation_price_error": "Цена за клик должна быть в пределах от {{ from }} до {{ to }}",
+  "tariffs_subscription_formCancelButton": "Отмена",
+  "tariffs_subscription_formSaveButton": "Сохранить",
+  "tariffs_subscription_formActive": "Активен",
+  "tariff_update_success": "Тариф успешно обновлён",
+  "tariff_create_success": "Тариф успешно создан",
+  "tariff_update_error": "Ошибка обновления тарифа",
+  "tariffs_subscription_formCreateButton": "Добавить"
+}

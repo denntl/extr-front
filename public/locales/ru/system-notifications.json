@@ -1,0 +1,17 @@
+{
+  "notifications_type_auto": "Автоматические",
+  "notifications_type_manual": "Ручные",
+  "notification_form_name": "Название уведомления",
+  "notification_form_entity": "Раздел",
+  "notification_form_event": "Событие",
+  "notification_form_all_users": "Все пользователи",
+  "notification_form_roles": "Роли",
+  "notification_form_active": "Активный",
+  "notification_form_telegram": "Телеграм",
+  "notification_form_all_companies": "Все компании",
+  "notification_form_companies": "Компании",
+  "notification_form_message": "Текст сообщения",
+  "notification_form_client_show": "Показывать уведомления клиентам",
+  "myCompany_companyName_formCancelButton": "Отмена",
+  "myCompany_companyName_formSaveButton": "Сохранить"
+}

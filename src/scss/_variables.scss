@@ -1,0 +1,160 @@
+// Variable overrides
+//
+// If you want to customize your project please add your variables below.
+
+$enable-deprecation-messages: false !default;
+
+$primary:   #39f !default;
+$success:   #51cc8a !default;
+$danger:    #E54040 !default;
+$warning:   #fc0 !default;
+$info:      #747af2 !default;
+$invalid:   rgba(228, 83, 83, 1);
+$valid:     rgba(46, 184, 92, 1);
+$white:     rgba(255, 255, 255, 1);
+$black:     rgba(33, 33, 33, 1);
+$grey:      rgba(106, 117, 124, 1);
+
+$sky-blue-pwa:      rgba(0, 149, 255, 1);
+$sky-blue-gradient: linear-gradient(45deg, #0095FF 0.12%, #00BBFF 99.8%);
+
+
+$font-family-base: 'Montserrat', sans-serif;
+$body-color: rgba(130, 137, 148, 1);
+
+$h1-font-size: 40px !default;
+$h2-font-size: 32px !default;
+$h3-font-size: 28px !default;
+$h4-font-size: 24px !default;
+$h5-font-size: 20px !default;
+$h6-font-size: 16px !default;
+
+$primary-text-emphasis:   shade-color($primary, 60%) !default;
+$success-text-emphasis:   shade-color($success, 60%) !default;
+$info-text-emphasis:      shade-color($info, 60%) !default;
+$warning-text-emphasis:   shade-color($warning, 60%) !default;
+$danger-text-emphasis:    shade-color($danger, 60%) !default;
+
+$primary-bg-subtle:       tint-color($primary, 80%) !default;
+$success-bg-subtle:       tint-color($success, 80%) !default;
+$info-bg-subtle:          tint-color($info, 80%) !default;
+$warning-bg-subtle:       tint-color($warning, 80%) !default;
+$danger-bg-subtle:        tint-color($danger, 80%) !default;
+
+$primary-border-subtle:   tint-color($primary, 60%) !default;
+$success-border-subtle:   tint-color($success, 60%) !default;
+$info-border-subtle:      tint-color($info, 60%) !default;
+$warning-border-subtle:   tint-color($warning, 60%) !default;
+$danger-border-subtle:    tint-color($danger, 60%) !default;
+
+$primary-gradient: (
+  "start":  tint-color($primary, 30%),
+  "stop":   shade-color($primary, 10%)
+) !default;
+
+$danger-gradient: (
+  "start":  tint-color($danger, 30%),
+  "stop":   shade-color($danger, 10%)
+) !default;
+
+$warning-gradient: (
+  "start":  tint-color($warning, 30%),
+  "stop":   shade-color($warning, 10%)
+) !default;
+
+$success-gradient: (
+  "start":  tint-color($success, 30%),
+  "stop":   shade-color($success, 10%)
+) !default;
+
+$info-gradient: (
+  "start":  tint-color($info, 30%),
+  "stop":   shade-color($info, 10%)
+) !default;
+
+$body-bg:                   $white !default;
+$body-tertiary-bg:          rgba(235, 235, 235, 1) !default;
+$sidebar-nav-link-color:    rgba(106, 117, 124, 1) !important !default;
+$sidebar-brand-color:       $black !default;
+
+$sidebar-toggler-icon:           url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><defs><linearGradient id='grad' gradientTransform='rotate(45)'><stop offset='0.12%' stop-color='red'/><stop offset='99.8%' stop-color='green'/></linearGradient></defs><circle r='3' fill='url(#grad)'/></svg>") !default;
+$sidebar-nav-link-color:         $black !default;
+$sidebar-nav-link-font-weight:   600;
+//$sidebar-width: 18rem !default;
+
+$font-size-base:            .9375rem !default;
+$border-color-translucent:  rgba(#080a0c, .0875) !default;
+$footer-bg:                 var(--cui-body-bg) !default;
+$table-cell-padding-y:      .75rem !default;
+$table-cell-padding-x:      .75rem !default;
+
+// scss-docs-start form-switch-variables
+//$form-check-input-border: none;
+$form-switch-gradient-start:        $sky-blue-pwa !default;
+$form-switch-gradient-stop:         rgba(0, 187, 255, 1) !default;
+$form-switch-bg-image:              url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><defs><linearGradient id='grad' gradientTransform='rotate(45)'><stop offset='0.12%' stop-color='#{$form-switch-gradient-start}'/><stop offset='99.8%' stop-color='#{$form-switch-gradient-stop}'/></linearGradient></defs><circle r='3' fill='url(#grad)'/></svg>") !default;
+$form-switch-focus-bg-image:        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><defs><linearGradient id='grad' gradientTransform='rotate(45)'><stop offset='0.12%' stop-color='#{$form-switch-gradient-start}'/><stop offset='99.8%' stop-color='#{$form-switch-gradient-stop}'/></linearGradient></defs><circle r='3' fill='url(#grad)'/></svg>") !default;
+$form-switch-checked-color:         rgba(255, 255, 255, 1) !default;
+$form-switch-checked-bg-image:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-checked-color}'/></svg>") !default;
+$form-check-input-checked-bg-color: $sky-blue-pwa;
+// scss-docs-end form-switch-variables
+
+$input-bg:                          $white !default;
+$input-color:                       rgba(157, 165, 177, 1) !default;
+$input-placeholder-color:           $input-color !default;
+$input-padding-x:                   1em !default;
+$input-border-radius:               0.375rem !default;
+$input-border-color:                $input-color !default;
+
+$input-focus-color:                 $black !default;
+$input-focus-box-shadow:            none !default;
+$input-focus-border-color:          $sky-blue-pwa !default;
+
+$input-disabled-bg:                 rgba(235, 237, 239, 1) !default;
+$input-disabled-border-color:       $input-color !default;
+$input-disabled-color:              $input-color !default;
+
+$form-valid-border-color:           $valid !default;
+$form-feedback-icon-valid-color:    $valid !default;
+
+$form-invalid-color:                $invalid !default;
+$form-invalid-border-color:         $invalid !default;
+$form-feedback-invalid-color:       $invalid !default;
+$form-feedback-icon-invalid-color:  $invalid !default;
+
+$form-multi-select-focus-box-shadow:  none !default;
+$form-multi-select-border-color:      $input-border-color !default;
+$form-multi-select-color:             $black !default;
+$form-multi-select-placeholder-color: $form-multi-select-color !default;
+
+$form-multi-select-indicator-icon:              url("data:image/svg+xml,<svg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M8.58581 0H1.41424C0.523331 0 0.0771648 1.07714 0.70713 1.70711L4.29292 5.29289C4.68344 5.68342 5.3166 5.68342 5.70713 5.29289L9.29292 1.70711C9.92288 1.07714 9.47671 0 8.58581 0Z' fill='#{$form-multi-select-color}'/></svg>") !default;
+$form-multi-select-indicator-icon-color:        $form-multi-select-color;
+$form-multi-select-indicator-icon-hover-color:  $form-multi-select-indicator-icon-color !default;
+
+$form-multi-select-option-selected-indicator-bg-image: url("data:image/svg+xml,<svg width='18' height='13' viewBox='0 0 18 13' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M6.00001 10.2L2.50001 6.69996C2.11341 6.31336 1.48661 6.31336 1.10001 6.69996C0.713409 7.08656 0.713409 7.71336 1.10001 8.09996L5.2929 12.2929C5.68343 12.6834 6.31659 12.6834 6.70711 12.2929L17.3 1.69996C17.6866 1.31336 17.6866 0.686559 17.3 0.299959C16.9134 -0.0866402 16.2866 -0.08664 15.9 0.299959L6.00001 10.2Z' fill='#828994'/></svg>");
+$form-multi-select-option-selected-indicator-bg: transparent !default;
+$form-multi-select-option-indicator-border: 1px solid rgba(157, 165, 177, 1);
+
+$form-select-focus-box-shadow:    none !default;
+$form-select-border-color:        $input-border-color !default;
+$form-select-color:               $black !default;
+$form-select-focus-border-color:  $sky-blue-pwa !default;
+$form-select-indicator:           url("data:image/svg+xml,<svg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M8.58581 0H1.41424C0.523331 0 0.0771648 1.07714 0.70713 1.70711L4.29292 5.29289C4.68344 5.68342 5.3166 5.68342 5.70713 5.29289L9.29292 1.70711C9.92288 1.07714 9.47671 0 8.58581 0Z' fill='#{$form-multi-select-color}'/></svg>") !default;
+$form-select-indicator-color:     $form-multi-select-color;
+$form-select-bg-size:             0.75rem !default;
+
+$table-color: rgba(33, 33, 33, 0.95) !default;
+$table-bg:  rgba(255, 255, 255, 1) !default;
+
+$nav-link-font-weight:   400 !default;
+$nav-link-color:         $black  !default;
+$nav-link-hover-color:   rgba(33, 33, 33, .8) !default;
+
+$dropdown-link-color: var(--cui-header-color) !default;
+
+$carousel-control-color: rgba(243, 243, 243, 1) !default;
+
+$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'> <path d='M0.340979 6.54995L5.82298 11.35C5.9676 11.4763 6.14556 11.5584 6.33557 11.5863C6.52559 11.6142 6.71963 11.5869 6.89449 11.5074C7.06936 11.428 7.21766 11.2999 7.32166 11.1385C7.42567 10.977 7.48098 10.789 7.48098 10.597V0.996952C7.48114 0.804708 7.42589 0.61649 7.32184 0.45484C7.21779 0.29319 7.06934 0.164958 6.89429 0.0855024C6.71923 0.00604657 6.52498 -0.0212658 6.3348 0.00683599C6.14462 0.0349378 5.96657 0.117263 5.82198 0.243952L0.34198 5.04395C0.23457 5.13781 0.148484 5.25357 0.0895 5.38344C0.0305162 5.51332 0 5.65431 0 5.79695C0 5.93959 0.0305162 6.08059 0.0895 6.21046C0.148484 6.34034 0.23457 6.45609 0.34198 6.54995H0.340979Z' fill='#{$carousel-control-color}'/></svg>") !default;
+$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'> <path d='M7.14 6.54995L1.658 11.35C1.51338 11.4763 1.33542 11.5584 1.14541 11.5863C0.955392 11.6142 0.761355 11.5869 0.586487 11.5074C0.41162 11.428 0.263321 11.2999 0.159317 11.1385C0.055313 10.977 3.81089e-06 10.789 3.67706e-07 10.597V0.996952C-0.000164459 0.804708 0.0550878 0.61649 0.159141 0.45484C0.263194 0.29319 0.411637 0.164958 0.586693 0.0855024C0.761749 0.00604657 0.955998 -0.0212658 1.14618 0.00683599C1.33636 0.0349378 1.51441 0.117263 1.659 0.243952L7.139 5.04395C7.24641 5.13781 7.3325 5.25357 7.39148 5.38344C7.45046 5.51332 7.48098 5.65431 7.48098 5.79695C7.48098 5.93959 7.45046 6.08059 7.39148 6.21046C7.3325 6.34034 7.24641 6.45609 7.139 6.54995H7.14Z' fill='#{$carousel-control-color}'/></svg>") !default;
+
+$card-cap-bg:                       rgba(var(--cui-body-bg), .03) !default;
